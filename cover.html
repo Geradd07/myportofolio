@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header-wrapper">
+        <header>
+            <div class="container">
+                <nav class="navigation">
+                    <a data-aos="fade-right" href="#home" onclick="scrollToSection('home')">Home</a>
+                    <a data-aos="fade-right" href="#about" onclick="scrollToSection('about')">About</a>
+                    <a data-aos="fade-right" href="#projects" onclick="scrollToSection('projects')">Projects</a>
+                    <a data-aos="fade-right" href="#contact" onclick="scrollToSection('contact')">Contact</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section id="home" class="container">
+        <h1 data-aos="fade-up" style="font-size: 100px;">Hi!! I'm Gerad</h1>
+        <h2 data-aos="fade-up" > Welcome and Enjoying</h2>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="projects" class="container">
+        <h2 data-aos="fade-up">My Projects</h2>
+        <div class="project" data-aos="fade-up">
+            <img src="img/Cuplikan layar 2023-12-21 221559.png" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Tugas Design Web (Membuat Web Sederhana Menggunakan Bootstrap)</p>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="about" class="container">
+        <h2 data-aos="fade-up">About Me</h2>
+        <div class="about-content">
+            <div data-aos="fade-up" class="image-container">
+                <img src="img/Untitled design.png" alt="Gerad's Image">
+            </div>
+            <div data-aos="fade-up" class="text-container">
+                <h1>Perkenalkan nama aku Gerad, Aku adalah seorang Mahasiswa Jurusan Teknik Informatika </h1>
+                <p>Setelah saya lulus Sekolah Menengah Akhir, saya berniat menjadi seorang Frontend Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section id="contact" class="container">
+        <h2 data-aos="fade-up">Contact Me</h2>
+        <p data-aos="fade-up">Jika ada yang ingin disampaikan, kalian bisa DM saya lewat Instagram. Terimakasih!</p>
+        <div data-aos="fade-up" class="instagram-container">
+            <a href="https://www.instagram.com/aryaadwipaa" target="_blank" rel="noopener noreferrer">
+                <img src="img/instagram.png" alt="Instagram Logo" class="instagram-logo">
+            </a>
+            <span class="instagram-username">@aryaadwipaa</span>
+        </div>
+    </section>
+    
+    <div class="separator"></div>
+
+    <footer>
+        <div class="container" >
+            <p>&copy; 2023 Arya Dwipa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

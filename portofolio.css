@@ -1,0 +1,204 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #17223b, #0b486b);
+    background-size: 200% 100%;
+    animation: lavaLamp 15s linear infinite alternate;
+}
+
+@keyframes lavaLamp {
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.header-wrapper {
+    height: 60px;
+}
+
+header {
+    background-color: rgba(7, 33, 54, 0.99);
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    position: fixed;
+    width: 50%;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    left: 50%; /* Tambahkan properti left */
+    transform: translateX(-50%); /* Geser elemen ke kiri sejauh setengah dari lebar elemen */
+}
+
+
+.header {
+    padding: 10px 0; /* Mengubah padding header pada layar lebih kecil */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: large;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-container {
+    max-width: 400px;
+}
+
+.instagram-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.instagram-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.instagram-username {
+    color: #fff;
+    font-size: 16px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.image-container img {
+    max-width: 75%;
+    height: auto;
+}
+
+#projects {
+    color: #fff;
+    padding: 80px 0;
+}
+
+.project {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+p {
+    color: #a7a7a7;
+}
+
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.project {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #282c35;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #1c1f26;
+}
+
+footer {
+    background-color: #282c35;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries untuk Desain Responsif */
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%; /* Header mengambil lebar penuh pada layar kecil */
+    }
+
+    .container {
+        padding: 0 20px; /* Padding dikurangi pada layar kecil */
+    }
+
+    .project,
+    .about-content {
+        flex-direction: column; /* Mengubah tata letak konten di layar kecil */
+        text-align: center;
+        align-items: center;
+    }
+
+    .project img {
+        max-width: 100%; /* Gambar mengambil lebar penuh */
+    }
+}
